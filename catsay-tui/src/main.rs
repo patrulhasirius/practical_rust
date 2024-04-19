@@ -1,5 +1,4 @@
 use cursive::{
-    event::Key,
     view::Nameable,
     views::{Checkbox, Dialog, EditView, ListView},
     Cursive,
