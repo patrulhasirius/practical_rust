@@ -28,6 +28,9 @@
               pkg-config
               nodejs
               wasm-pack
+              eslint_d
+              typescript
+              trunk
               (rust-bin.stable.latest.default.override
                 {
                   extensions = ["rust-src"];
