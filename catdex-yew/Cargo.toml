@@ -1,0 +1,13 @@
+[package]
+name = "catdex-yew"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+base64 = "0.22.1"
+gloo-file = { version = "0.3.0", features = ["futures"] }
+js-sys = "0.3.69"
+stylist = { version = "0.13.0", features = ["yew", "parser"] }
+wasm-bindgen-futures = "0.4.42"
+web-sys = "0.3.69"
+yew = { version = "0.21.0", features = ["csr"] }
