@@ -31,6 +31,8 @@
               eslint_d
               typescript
               trunk
+              postgresql
+              diesel-cli
               (rust-bin.stable.latest.default.override
                 {
                   extensions = ["rust-src"];
@@ -39,7 +41,9 @@
             ];
 
             shellHook = ''
-              echo "Environment is ready" | ${pkgs.lolcat}/bin/lolcat;
+              export DATABASE_URL=postgres://postgres:mypassword@localhost
+              docker start catdex-db
+                echo "Environment is ready" | ${pkgs.lolcat}/bin/lolcat;
             '';
           };
         }
