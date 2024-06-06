@@ -1,2 +1,4 @@
 .direnv
 wasm-image-processing/client
+.tmp
+logfile
